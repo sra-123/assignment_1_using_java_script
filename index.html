@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First File</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h style="color:red;font-size:30px;font-style:italic">ASSIGNMENT-1</h>
+        <br><br>
+        <input id="text_1" type="text" style="border-color:blue">
+        <input type="button" value="submit" style="background-color:aqua" onclick="fun()">
+        <p id="p_1"></p>
+        <script>
+            function fun(){
+                var val=document.getElementById("text_1").value;//getting an element by using id
+                switch (val) {
+                    case "JAN":
+                        document.getElementById("p_1").textContent="JANUARY";
+                        break;
+                    case "FEB":
+                        document.getElementById("p_1").textContent="FEBRAUARY";
+                        break;
+                    case "MAR":
+                        document.getElementById("p_1").textContent="MARCH";
+                        break;
+                    case "APR":
+                        document.getElementById("p_1").textContent="APRIL";
+                        break;
+                    case "MAY":
+                        document.getElementById("p_1").textContent="MAY";
+                        break;
+                    case "JUN":
+                        document.getElementById("p_1").textContent="JUNE";
+                        break;
+                    case "JUL":
+                        document.getElementById("p_1").textContent="JULY";
+                        break;
+                    case "AUG":
+                        document.getElementById("p_1").textContent="AUGUST";
+                        break;
+                    case "SEP":
+                        document.getElementById("p_1").textContent="SEPTEMBER";
+                        break;
+                    case "OCT":
+                        document.getElementById("p_1").textContent="OCTOBER";
+                        break;
+                    case "NOV":
+                        document.getElementById("p_1").textContent="NOVEMBER";
+                        break;
+                    case "DEC":
+                        document.getElementById("p_1").textContent="DECEMBER";
+                        break;
+                
+                    default:
+                        document.getElementById("p_1").textContent="Not Found";
+                        break;
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
